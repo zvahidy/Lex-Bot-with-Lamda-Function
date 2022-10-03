@@ -144,7 +144,7 @@ def recommend_portfolio(intent_request):
                 "The minimum amount to invest must be greater than 5000, "
                 "please provide a another amount to invest."
             )
-    if risk_level is None:
+    if risk_level == "None":
         return build_validation_result(
             True,
             "riskLevel",
